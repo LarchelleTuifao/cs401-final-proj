@@ -28,6 +28,24 @@
     "time": "2025-05-10T17:00",
     "where": "Salt at Our Kaka‘ako",
     "why": "bringing together food, fashion, and entertainment"
+  },
+  {
+    "name": "Waikīkī Spam Jam",
+    "time": "2025-05-25T16:00",
+    "where": "Kalākaua Avenue, Waikīkī",
+    "why": "celebrating Hawaii’s love for Spam with food, music, and crafts"
+  },
+  {
+    "name": "Hale‘iwa Arts Festival",
+    "time": "2025-07-19T10:00",
+    "where": "Hale‘iwa Beach Park",
+    "why": "showcasing local artists, live performances, and family fun"
+  },
+  {
+    "name": "Kō Hana Rum Harvest Festival",
+    "time": "2025-08-17T12:00",
+    "where": "Kō Hana Distillers, Kunia",
+    "why": "celebrating sugarcane harvest with tours, tastings, and live music"
   }
 ]
 

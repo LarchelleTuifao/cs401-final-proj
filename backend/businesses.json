@@ -29,6 +29,24 @@
     "type": "Zoo",
     "location": "Honolulu",
     "contact": "info@honoluluzoo.org"
+  },
+  {
+    "name": "The Modern Honolulu",
+    "type": "Hotel",
+    "location": "Honolulu",
+    "contact": "info@themodernhonolulu.com"
+  },
+  {
+    "name": "Lanikai Beach",
+    "type": "Beach",
+    "location": "Kailua",
+    "contact": "info@lanikaibeach.com"
+  },
+  {
+    "name": "Pearl Harbor National Memorial",
+    "type": "Museum",
+    "location": "Honolulu",
+    "contact": "info@pearlharbormemorial.org"
   }
 ]
 

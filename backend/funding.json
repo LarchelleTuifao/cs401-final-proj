@@ -29,6 +29,24 @@
     "deadline": "2025-05-20",
     "source": "Mana Up Hawai‘i",
     "description": "Seed funding for innovative local startups in the tech and product space"
+  },
+  {
+    "name": "Community Development Grant",
+    "deadline": "2025-06-15",
+    "source": "Oahu Community Foundation",
+    "description": "Funding for community-driven development projects in Oahu"
+  },
+  {
+    "name": "Green Business Innovation Fund",
+    "deadline": "2025-07-01",
+    "source": "Hawai‘i Green Business Network",
+    "description": "Support for businesses creating sustainable products and services"
+  },
+  {
+    "name": "Local Food Production Grant",
+    "deadline": "2025-06-30",
+    "source": "Hawai‘i Department of Agriculture",
+    "description": "Funding for farms and food producers expanding local food systems"
   }
 ]
 

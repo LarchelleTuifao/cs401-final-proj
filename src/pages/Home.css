@@ -1,38 +1,219 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /* Raleway font for modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* Poppins font for clean look */
+
 .home-container {
+  background-color: #f5f0e1;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.nav {
+/* Navbar */
+.navbar {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffb6c1; /* light pink */
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-link {
-  background-color: #ffffff22;
-  padding: 1rem 2rem;
-  border-radius: 12px;
+  background-color: #ffc9d6; /* slightly lighter pink */
   color: white;
-  font-size: 1.2rem;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
 }
 
 .nav-link:hover {
-  background-color: #ffffff55;
+  background-color: #ff99af; /* darker pink on hover */
   transform: scale(1.05);
 }
 
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif; /* Modern font */
+  font-size: 2.5rem; /* Smaller size */
+  color: white; /* White color for the title */
+  margin-bottom: 0.5rem;
+  white-space: nowrap; /* Ensures it stays on one line */
+  letter-spacing: 1px; /* Slightly spaced letters for clarity */
+  animation: fadeIn 1s ease-out, slideIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.welcome-text {
+  font-size: 1.4rem;
+  color: #1565c0;
+  margin-bottom: 2rem;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Sticky Notes */
+.sticky-note {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-note::before {
+  content: "📌";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+
+.sticky-note:hover {
+  background: #fff78a;
+  transform: scale(1.05);
+}
+
+/* Sticky note colors */
+.yellow {
+  background: #fff89a;
+  border: 2px solid #f0e68c;
+}
+
+.pink {
+  background: #ffd1dc;
+  border: 2px solid #ffb6c1;
+}
+
+.blue {
+  background: #add8e6;
+  border: 2px solid #87ceeb;
+}
+
+/* Title Sticky Note */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.title-sticky {
+  position: relative;
+  background: #fff89a;
+  padding: 2rem 4rem;
+  border: 2px solid #f0e68c;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: fit-content;
+}
+
+.pin-emoji {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.title-text {
+  font-size: 4rem;
+  color: #4b3b2b;
+  text-shadow: 1px 1px 0px #d3bfa0;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* About Sticky Note (top right) */
+.about-sticky-note {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: #ffd1dc;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #4b3b2b;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(5deg);
+  transition: transform 0.3s, background 0.3s;
+  z-index: 20;
+}
+
+.about-sticky-note:hover {
+  background: #ffb6c1;
+  transform: rotate(0deg) scale(1.05);
+}
+
+.about-text {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffb6c1;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
